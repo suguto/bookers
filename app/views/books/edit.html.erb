@@ -11,18 +11,20 @@
 
 <%= form_with model:@book do |b| %>
 <label>Title</label>
-<%= b.text_field:title %>
-
 <br>
+
+<div class = "bottom"><%= b.text_field:title %></div>
+
+
 
 <label>Body</label>
-<%= b.text_area:body %>
 
-<br>
+<div class = "bottom"><%= b.text_area:body %></div>
+
 
 <%= b.submit "Update Book" %>
 <% end %>
 
-<%= link_to "show",book_path(@book) %>
+<%= link_to "Show",book_path(@book) %>
 |
 <a class ="back" href="/books">Back</a>

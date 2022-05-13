@@ -35,19 +35,25 @@
  <% end %>
 
 <%= form_with model: @book do |b| %>
+
+<div class = "new-book">
   <label>title</label>
+  <br>
+  
   <%= b.text_field:title %>
 
   <br>
-  <br>
 
   <label>body</label>
+  <br>
   <%= b.text_area:body %>
-
+  
+  <br>
 
   <%= b.submit 'Create Book' %>
 
-
+  </div>
+  
   <% end %>
 
 
